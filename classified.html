@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Classified Archives | Hilton Accords</title>
+
+    <link rel="stylesheet" href="classified.css">
+    <script src="classified.js" defer></script>
+</head>
+
+<body>
+    <header class="secure-header">
+        <div class="network-name">
+            <span class="status-light"></span>
+            HILTON ACCORDS SECURE NETWORK
+        </div>
+
+        <span class="classification">
+            TOP SECRET // HA EYES ONLY
+        </span>
+    </header>
+
+    <main class="command-container">
+
+        <!-- ACCESS CONTROL SCREEN -->
+        <section id="loginScreen" class="security-panel">
+
+            <div class="security-symbol">⬡</div>
+
+            <p class="red-label">
+                RESTRICTED GOVERNMENT SYSTEM
+            </p>
+
+            <h1>CLASSIFIED ARCHIVES</h1>
+
+            <p class="system-subtitle">
+                Directorate of Restricted Information
+            </p>
+
+            <div class="terminal">
+                <div class="terminal-header">
+                    SECURITY TERMINAL 001
+                    <span class="online">● ONLINE</span>
+                </div>
+
+                <div class="terminal-output" id="bootText">
+                    <p>&gt; HILTON ACCORDS SECURE NETWORK</p>
+                    <p>&gt; INITIALIZING ACCESS PROTOCOL...</p>
+                    <p>&gt; EXECUTIVE AUTHORIZATION REQUIRED</p>
+                    <p>&gt; AWAITING CREDENTIALS_</p>
+                </div>
+            </div>
+
+            <form id="accessForm" class="access-form">
+                <label for="accessCode">
+                    ENTER AUTHORIZATION CODE
+                </label>
+
+                <input
+                    type="password"
+                    id="accessCode"
+                    placeholder="ACCESS CODE REQUIRED"
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit">
+                    VERIFY SECURITY CLEARANCE
+                </button>
+            </form>
+
+            <p id="accessMessage"
+               class="access-message"
+               role="status"
+               aria-live="polite"></p>
+
+            <p class="security-notice">
+                All access attempts are subject to
+                fictional executive review.
+            </p>
+
+            <a href="index.html" class="return-link">
+                ← RETURN TO PUBLIC GOVERNMENT PORTAL
+            </a>
+
+        </section>
+
+        <!-- CLASSIFIED DASHBOARD -->
+        <section id="archiveScreen"
+                 class="archive-screen hidden">
+
+            <div class="dashboard-heading">
+                <p class="online">
+                    ● PRESIDENTIAL CLEARANCE VERIFIED
+                </p>
+
+                <h1>RESTRICTED DOCUMENT DIRECTORY</h1>
+
+                <p>
+                    Welcome to the Hilton Accords
+                    classified intelligence network.
+                </p>
+            </div>
+
+            <div class="dashboard-actions">
+                <button id="overrideButton"
+                        class="override-button">
+                    PRESIDENTIAL OVERRIDE
+                </button>
+
+                <button id="logoutButton"
+                        class="secondary-button">
+                    TERMINATE SESSION
+                </button>
+            </div>
+
+            <div class="document-directory">
+
+                <button class="document-card"
+                        data-document="secretary">
+                    <span class="file-id">HA-SEC-001</span>
+                    <strong>
+                        Identity of the Secretary of State
+                    </strong>
+                    <span class="file-status">
+                        TOP SECRET
+                    </span>
+                </button>
+
+                <button class="document-card"
+                        data-document="armed">
+                    <span class="file-id">HA-DOD-002</span>
+                    <strong>
+                        Armed Forces Readiness Report
+                    </strong>
+                    <span class="file-status">
+                        CLASSIFIED
+                    </span>
+                </button>
+
+                <button class="document-card"
+                        data-document="justice">
+                    <span class="file-id">HA-DOJ-003</span>
+                    <strong>
+                        Investigation of Director Hefty
+                    </strong>
+                    <span class="file-status">
+                        CASE CLOSED
+                    </span>
+                </button>
+
+                <button class="document-card"
+                        data-document="google">
+                    <span class="file-id">HA-COM-004</span>
+                    <strong>
+                        Google Is Inyalowda Memorandum
+                    </strong>
+                    <span class="file-status">
+                        RESTRICTED
+                    </span>
+                </button>
+
+                <button class="document-card"
+                        data-document="snacks">
+                    <span class="file-id">HA-EXEC-005</span>
+                    <strong>
+                        Presidential Emergency Snack Reserve
+                    </strong>
+                    <span class="file-status">
+                        TOP SECRET
+                    </span>
+                </button>
+
+            </div>
+
+            <!-- DOCUMENT VIEWER -->
+            <section id="documentViewer"
+                     class="document-viewer hidden">
+
+                <div class="document-top">
+                    <span id="documentNumber"></span>
+                    <span class="red-label">CLASSIFIED</span>
+                </div>
+
+                <h2 id="documentTitle"></h2>
+
+                <div id="documentBody"></div>
+
+                <button id="closeDocument"
+                        class="secondary-button">
+                    CLOSE DOCUMENT
+                </button>
+            </section>
+
+            <!-- OVERRIDE MESSAGE -->
+            <section id="overridePanel"
+                     class="override-panel hidden"
+                     role="status"
+                     aria-live="polite">
+
+                <h2>PRESIDENTIAL AUTHORIZATION CONFIRMED</h2>
+
+                <p>
+                    The President has personally reviewed
+                    your request.
+                </p>
+
+                <p>
+                    It has been determined that you remain
+                    insufficiently important to receive
+                    this information.
+                </p>
+
+                <p>
+                    Thank you for your continued cooperation.
+                </p>
+
+                <button id="dismissOverride">
+                    ACKNOWLEDGE EXECUTIVE DECISION
+                </button>
+            </section>
+
+            <a href="index.html" class="return-link">
+                ← RETURN TO PUBLIC GOVERNMENT PORTAL
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer class="secure-footer">
+        <p>
+            HILTON ACCORDS • DIRECTORATE OF RESTRICTED INFORMATION
+        </p>
+        <p>
+            UNAUTHORIZED CURIOSITY IS DISCOURAGED
+        </p>
+        <p class="fiction-note">
+            Fictional government roleplay interface.
+            Not a real secure network.
+        </p>
+    </footer>
+</body>
+</html>

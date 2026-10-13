@@ -1,0 +1,313 @@
+
+:root {
+    --navy: #0B1F3A;
+    --gold: #C9A44C;
+    --white: #F5F6F8;
+    --command: #141A21;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: var(--white);
+    color: var(--navy);
+}
+
+header {
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 5px solid var(--gold);
+}
+
+
+header h1 {
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.emblem {
+    width: 150px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 3px solid var(--gold);
+}
+
+
+
+nav {
+    margin-top: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+button {
+    background-color: var(--navy);
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--gold);
+    color: var(--navy);
+}
+
+footer {
+    background-color: var(--navy);
+    color: var(--gold);
+    text-align: center;
+    padding: 25px;
+}
+
+
+.about-section {
+    margin-top: 80px;
+    padding: 50px 30px;
+    background-color: white;
+    border-top: 5px solid var(--gold);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+.motto-item {
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--gold);
+    background-color: #F5F6F8;
+    text-align: left;
+}
+
+.motto-item h3 {
+    color: var(--navy);
+    margin-top: 0;
+}
+
+.motto-item p {
+    line-height: 1.8;
+}
+
+.official-statement {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: var(--navy);
+    border-top: 1px solid var(--gold);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.national-motto {
+    color: var(--gold);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+
+/* OFFICE OF THE PRESIDENT */
+
+.president-main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.presidential-document {
+    background: #ffffff;
+    padding: 60px 70px;
+    border: 1px solid #ddd;
+    border-top: 6px solid var(--gold);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.document-heading {
+    text-align: center;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.document-office {
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--navy);
+}
+
+.document-office span {
+    display: block;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.document-number {
+    color: #8a702e;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.document-heading h2 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.document-date {
+    font-style: italic;
+    color: #666;
+}
+
+.address-content {
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.address-content p {
+    margin-bottom: 24px;
+}
+
+.address-content h3 {
+    margin-top: 55px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--gold);
+    font-size: 24px;
+}
+
+.address-content blockquote {
+    margin: 35px 20px;
+    padding: 25px;
+    background: #f5f6f8;
+    border-left: 4px solid var(--gold);
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.salutation {
+    font-weight: bold;
+}
+
+.closing-motto {
+    text-align: center;
+    font-weight: bold;
+    color: var(--navy);
+    line-height: 2.2;
+    margin: 50px 0;
+}
+
+.presidential-signature {
+    margin-top: 70px;
+    text-align: right;
+    border-top: 1px solid var(--gold);
+    padding-top: 30px;
+}
+
+.presidential-signature p {
+    margin: 5px 0;
+}
+
+.signature-name {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.scripture {
+    font-size: 12px;
+    color: #8a702e;
+    margin-top: 20px !important;
+}
+
+.document-end {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 2px solid var(--gold);
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.document-end span {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Smaller screen adjustments */
+
+@media (max-width: 700px) {
+    .president-main {
+        padding: 10px;
+    }
+
+    .presidential-document {
+        padding: 30px 20px;
+    }
+
+    .document-heading h2 {
+        font-size: 26px;
+    }
+
+    .address-content {
+        font-size: 16px;
+    }
+}
