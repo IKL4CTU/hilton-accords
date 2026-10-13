@@ -372,3 +372,389 @@ footer {
         padding: 25px 18px;
     }
 }
+
+
+/* DEPARTMENT OF ARMED FORCES */
+
+.armed-forces-main .department-panel {
+    border-top: 6px solid var(--gold);
+}
+
+.readiness-dashboard {
+    margin: 30px 0;
+    padding: 25px;
+    background: var(--navy);
+    color: white;
+    border: 2px solid var(--gold);
+}
+
+.readiness-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.readiness-heading h3 {
+    margin: 0;
+    color: white;
+    font-size: 22px;
+}
+
+.readiness-live {
+    color: #65e0a3;
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.readiness-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.readiness-card {
+    padding: 20px;
+    background: #182d49;
+    border: 1px solid #40536c;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+
+.readiness-card span {
+    color: #b4c0d1;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.readiness-card strong {
+    color: var(--gold);
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+.readiness-disclaimer {
+    margin: 22px 0 0;
+    color: #aebcd0;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.readiness-report {
+    margin-top: 25px;
+    padding: 20px;
+    background: #e9edf2;
+    border-left: 4px solid var(--gold);
+    color: var(--navy);
+    line-height: 1.8;
+}
+
+.readiness-report[hidden] {
+    display: none;
+}
+
+.readiness-report h4 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+@media (max-width: 650px) {
+    .readiness-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .readiness-dashboard {
+        padding: 18px;
+    }
+}
+
+/* DEPARTMENT OF COMMUNICATIONS */
+
+.communications-dashboard {
+    margin: 30px 0;
+    padding: 25px;
+    background: var(--navy);
+    color: white;
+    border: 2px solid var(--gold);
+}
+
+.communications-dashboard-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.communications-dashboard-heading h3 {
+    color: white;
+    margin: 0;
+    font-size: 22px;
+}
+
+.communications-online {
+    color: #65e0a3;
+    font: bold 12px monospace;
+}
+
+.communications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.communications-status {
+    background: #182d49;
+    border: 1px solid #40536c;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.communications-status span {
+    color: #b4c0d1;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.communications-status strong {
+    color: var(--gold);
+    font-size: 15px;
+}
+
+.communications-disclaimer {
+    font-size: 12px;
+    font-style: italic;
+    color: #8996a7;
+    margin-top: 20px;
+}
+
+.communications-dashboard .communications-disclaimer {
+    color: #b4c0d1;
+}
+
+.communications-output {
+    background: #e9edf2;
+    color: var(--navy);
+    border-left: 4px solid var(--gold);
+    padding: 22px;
+    margin-top: 24px;
+    line-height: 1.8;
+}
+
+.communications-output[hidden] {
+    display: none;
+}
+
+.communications-output h4 {
+    margin-top: 0;
+}
+
+.inquiry-label {
+    display: block;
+    font-weight: bold;
+    margin: 25px 0 10px;
+}
+
+.inquiry-select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    background: white;
+    color: var(--navy);
+    border: 1px solid #aab4c0;
+    font-size: 15px;
+}
+
+.press-release {
+    background: white;
+    border: 1px solid #dce1e8;
+    border-left: 4px solid var(--gold);
+    padding: 22px;
+    margin-top: 18px;
+}
+
+.press-release span {
+    color: #80661e;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.press-release h4 {
+    color: var(--navy);
+    margin: 12px 0;
+    font-size: 19px;
+}
+
+.press-release p {
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+@media (max-width: 650px) {
+    .communications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .communications-dashboard {
+        padding: 18px;
+    }
+}
+
+/* DEPARTMENT OF JUSTICE */
+
+.justice-dashboard {
+    margin: 30px 0;
+    padding: 25px;
+    background: var(--navy);
+    color: white;
+    border: 2px solid var(--gold);
+}
+
+.justice-dashboard-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.justice-dashboard-heading h3 {
+    margin: 0;
+    color: white;
+    font-size: 22px;
+}
+
+.justice-online {
+    color: #65e0a3;
+    font: bold 12px monospace;
+}
+
+.justice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.justice-status {
+    background: #182d49;
+    padding: 20px;
+    border: 1px solid #40536c;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.justice-status span {
+    color: #b4c0d1;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.justice-status strong {
+    color: var(--gold);
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+.justice-disclaimer {
+    color: #b4c0d1;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.justice-case-list {
+    display: grid;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.justice-case {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 100%;
+    background: white;
+    color: var(--navy);
+    text-align: left;
+    border: 1px solid #cfd6df;
+    border-left: 4px solid var(--gold);
+    padding: 18px;
+}
+
+.justice-case:hover {
+    background: #e8edf3;
+    color: var(--navy);
+}
+
+.justice-case span,
+.justice-case small {
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.justice-case strong {
+    flex: 1;
+    min-width: 180px;
+}
+
+.justice-case small {
+    color: #846620;
+    font-weight: bold;
+}
+
+.justice-label {
+    display: block;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.justice-select {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: white;
+    color: var(--navy);
+    border: 1px solid #aab4c0;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.justice-output {
+    margin-top: 24px;
+    padding: 22px;
+    background: #e9edf2;
+    color: var(--navy);
+    border-left: 4px solid var(--gold);
+    line-height: 1.8;
+}
+
+.justice-output[hidden] {
+    display: none;
+}
+
+.justice-output h4 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+@media (max-width: 650px) {
+    .justice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .justice-dashboard {
+        padding: 18px;
+    }
+}

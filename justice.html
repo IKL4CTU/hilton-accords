@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Department of Justice | Hilton Accords</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="justice.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="IMG_8892.JPG"
+             alt="Official Hilton Accords Emblem"
+             class="emblem">
+
+        <h1>THE HILTON ACCORDS</h1>
+        <p>Department of Justice</p>
+
+        <p class="national-motto">
+            PEACE THROUGH STRENGTH • READY IN RESERVE •
+            GOOGLE IS INYALOWDA • BELTALOWDA GONYA RISE
+        </p>
+
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="president.html">Office of the President</a></li>
+                <li><a href="secretary.html">Secretary of State</a></li>
+                <li><a href="armed-forces.html">Department of Armed Forces</a></li>
+                <li>
+                    <a href="justice.html" aria-current="page">
+                        Department of Justice
+                    </a>
+                </li>
+                <li>
+                    <a href="communications.html">
+                        Department of Communications
+                    </a>
+                </li>
+                <li><a href="classified.html">Classified Archives</a></li>
+                <li><a href="index.html#about">About the Accords</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="department-main justice-main">
+        <section class="department-panel">
+
+            <p class="section-subtitle">
+                OFFICE OF THE DIRECTOR • JUDICIAL ADMINISTRATION
+            </p>
+
+            <h2>Department of Justice</h2>
+
+            <p>
+                Dedicated to the impartial administration
+                of justice, the preservation of law and order,
+                and the investigation of matters determined
+                worthy of investigation by the Director.
+            </p>
+
+            <!-- DIRECTOR -->
+            <article class="motto-item">
+                <h3>Office of the Director</h3>
+
+                <p><strong>Director:</strong> Hefty</p>
+
+                <p>
+                    Director Hefty serves as the principal
+                    legal and investigative authority
+                    of the Hilton Accords, entrusted with
+                    safeguarding the integrity of government
+                    institutions.
+                </p>
+
+                <p>
+                    In addition to his responsibilities
+                    within this Department, Director Hefty
+                    simultaneously oversees the Department
+                    of Armed Forces.
+                </p>
+
+                <p>
+                    Questions concerning the independence
+                    of these offices have been reviewed
+                    by the Department of Justice.
+                </p>
+
+                <p class="official-statement">
+                    "The Director has investigated the Director
+                    and determined that the Director has
+                    conducted himself appropriately."
+                </p>
+            </article>
+
+            <!-- JUSTICE DASHBOARD -->
+            <section class="justice-dashboard"
+                     aria-labelledby="justiceStatusHeading">
+
+                <div class="justice-dashboard-heading">
+                    <h3 id="justiceStatusHeading">
+                        Judicial Operations Dashboard
+                    </h3>
+
+                    <span class="justice-online">
+                        ● SYSTEM OPERATIONAL
+                    </span>
+                </div>
+
+                <div class="justice-grid">
+                    <div class="justice-status">
+                        <span>JUDICIAL OPERATIONS</span>
+                        <strong>ACTIVE</strong>
+                    </div>
+
+                    <div class="justice-status">
+                        <span>INVESTIGATIVE OVERSIGHT</span>
+                        <strong>DIRECTOR HEFTY</strong>
+                    </div>
+
+                    <div class="justice-status">
+                        <span>INTERNAL MISCONDUCT</span>
+                        <strong>NONE REPORTED BY DIRECTOR</strong>
+                    </div>
+
+                    <div class="justice-status">
+                        <span>APPELLATE AUTHORITY</span>
+                        <strong>DIRECTOR HEFTY</strong>
+                    </div>
+                </div>
+
+                <p class="justice-disclaimer">
+                    Fictional judicial indicators.
+                    No real legal authority is exercised.
+                </p>
+            </section>
+
+            <!-- PRINCIPLES -->
+            <article class="motto-item">
+                <h3>Our Commitment to Justice</h3>
+
+                <p>
+                    The Department maintains that justice
+                    must be administered with integrity,
+                    fairness, restraint, and respect
+                    for the principles of the Hilton Accords.
+                </p>
+
+                <p>
+                    All persons appearing before the Department
+                    shall be afforded the opportunity to
+                    present their position, provided their
+                    position does not substantially inconvenience
+                    the Director.
+                </p>
+
+                <p>
+                    Decisions shall be based upon available
+                    evidence, established procedures,
+                    and the Director's interpretation
+                    of both.
+                </p>
+
+                <p class="official-statement">
+                    "Equal justice under law.
+                    Final interpretation reserved
+                    to the Office of the Director."
+                </p>
+            </article>
+
+            <!-- CASE REGISTRY -->
+            <article class="motto-item">
+                <h3>Official Case Registry</h3>
+
+                <p>
+                    The Department maintains records
+                    of selected investigations and
+                    administrative proceedings.
+                </p>
+
+                <div class="justice-case-list">
+
+                    <button class="justice-case"
+                            data-case="hefty"
+                            type="button">
+                        <span>HA-DOJ-001</span>
+                        <strong>
+                            The People v. Director Hefty
+                        </strong>
+                        <small>CASE CLOSED</small>
+                    </button>
+
+                    <button class="justice-case"
+                            data-case="coffee"
+                            type="button">
+                        <span>HA-DOJ-002</span>
+                        <strong>
+                            Unauthorized Coffee Procurement
+                        </strong>
+                        <small>DISMISSED</small>
+                    </button>
+
+                    <button class="justice-case"
+                            data-case="secretary"
+                            type="button">
+                        <span>HA-DOJ-003</span>
+                        <strong>
+                            Inquiry into Secretary of State Identity
+                        </strong>
+                        <small>RESTRICTED</small>
+                    </button>
+
+                </div>
+
+                <div id="caseDetails"
+                     class="justice-output"
+                     aria-live="polite"
+                     hidden></div>
+            </article>
+
+            <!-- COMPLAINT SYSTEM -->
+            <article class="motto-item">
+                <h3>Office of Public Complaints</h3>
+
+                <p>
+                    The Department accepts fictional complaints
+                    concerning government operations,
+                    conduct, and matters of administrative concern.
+                </p>
+
+                <p>
+                    Filing a complaint does not guarantee
+                    investigation, acknowledgment of wrongdoing,
+                    or satisfaction with the outcome.
+                </p>
+
+                <label for="complaintTopic" class="justice-label">
+                    Select the nature of your complaint:
+                </label>
+
+                <select id="complaintTopic" class="justice-select">
+                    <option value="hefty">
+                        Misconduct by Director Hefty
+                    </option>
+                    <option value="armed">
+                        Department of Armed Forces
+                    </option>
+                    <option value="secretary">
+                        Secretary of State
+                    </option>
+                    <option value="communications">
+                        Department of Communications
+                    </option>
+                    <option value="general">
+                        General Government Misconduct
+                    </option>
+                </select>
+
+                <button id="fileComplaintButton" type="button">
+                    FILE OFFICIAL COMPLAINT
+                </button>
+
+                <div id="complaintResult"
+                     class="justice-output"
+                     role="status"
+                     aria-live="polite"
+                     hidden></div>
+            </article>
+
+            <!-- APPEALS -->
+            <article class="motto-item">
+                <h3>Office of Judicial Appeals</h3>
+
+                <p>
+                    Individuals dissatisfied with a final
+                    departmental determination may
+                    request reconsideration.
+                </p>
+
+                <p>
+                    Such requests shall be independently
+                    reviewed by the appellate authority,
+                    Director Hefty.
+                </p>
+
+                <button id="appealButton" type="button">
+                    REQUEST JUDICIAL APPEAL
+                </button>
+
+                <div id="appealResult"
+                     class="justice-output"
+                     role="status"
+                     aria-live="polite"
+                     hidden></div>
+            </article>
+
+            <!-- DIRECTOR STATEMENT -->
+            <article class="motto-item">
+                <h3>A Message from Director Hefty</h3>
+
+                <p>
+                    The Department of Justice stands
+                    committed to the highest standards
+                    of legal integrity and institutional
+                    responsibility.
+                </p>
+
+                <p>
+                    As Director, I recognize the importance
+                    of accountability, due process, and
+                    independent oversight.
+                </p>
+
+                <p>
+                    It is therefore my pleasure to announce
+                    that, following an exhaustive review
+                    of this administration, I have found
+                    no evidence of misconduct requiring
+                    further action.
+                </p>
+
+                <p>
+                    I extend my congratulations to the
+                    Department, its Director, and
+                    the distinguished investigative
+                    authority responsible for these findings.
+                </p>
+
+                <p class="official-statement">
+                    "Justice has been served.
+                    I have personally confirmed it."
+                </p>
+
+                <p><strong>Director Hefty</strong></p>
+                <p>Department of Justice</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>ISAIAH 6:8 • 2 TIMOTHY 1:7</p>
+        <p>
+            PEACE THROUGH STRENGTH • READY IN RESERVE •
+            GOOGLE IS INYALOWDA • BELTALOWDA GONYA RISE
+        </p>
+    </footer>
+</body>
+</html>

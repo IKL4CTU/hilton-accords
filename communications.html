@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Department of Communications | Hilton Accords</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="communications.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="IMG_8892.JPG"
+             alt="Official Hilton Accords Emblem"
+             class="emblem">
+
+        <h1>THE HILTON ACCORDS</h1>
+        <p>Department of Communications</p>
+
+        <p class="national-motto">
+            PEACE THROUGH STRENGTH • READY IN RESERVE •
+            GOOGLE IS INYALOWDA • BELTALOWDA GONYA RISE
+        </p>
+
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="president.html">Office of the President</a></li>
+                <li><a href="secretary.html">Secretary of State</a></li>
+                <li><a href="armed-forces.html">Department of Armed Forces</a></li>
+                <li><a href="justice.html">Department of Justice</a></li>
+                <li>
+                    <a href="communications.html" aria-current="page">
+                        Department of Communications
+                    </a>
+                </li>
+                <li><a href="classified.html">Classified Archives</a></li>
+                <li><a href="index.html#about">About the Accords</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="department-main communications-main">
+        <section class="department-panel">
+
+            <p class="section-subtitle">
+                OFFICE OF THE DIRECTOR • PUBLIC INFORMATION
+            </p>
+
+            <h2>Department of Communications</h2>
+
+            <p>
+                The official source for executive statements,
+                departmental announcements, press briefings,
+                and information approved for public consumption.
+            </p>
+
+            <!-- DIRECTOR'S OFFICE -->
+            <article class="motto-item">
+                <h3>Office of the Director</h3>
+
+                <p><strong>Director:</strong> Jay</p>
+
+                <p>
+                    Under the authority of the Office of the
+                    President, Director Jay oversees official
+                    communications, public messaging,
+                    press relations, and the coordination
+                    of information across government departments.
+                </p>
+
+                <p>
+                    The Department is entrusted with ensuring
+                    that all statements issued on behalf of the
+                    Hilton Accords reflect the highest standards
+                    of professionalism, accuracy, and
+                    carefully considered disclosure.
+                </p>
+
+                <p>
+                    While the government remains committed to
+                    transparency, such transparency shall not
+                    be interpreted as an obligation to explain
+                    every decision, policy, or unusual appointment.
+                </p>
+
+                <p class="official-statement">
+                    "The government has nothing to hide,
+                    except those matters it has determined
+                    should remain hidden."
+                </p>
+            </article>
+
+            <!-- STATUS DASHBOARD -->
+            <section class="communications-dashboard">
+                <div class="communications-dashboard-heading">
+                    <h3>National Communications Status</h3>
+                    <span class="communications-online">
+                        ● OPERATIONS ACTIVE
+                    </span>
+                </div>
+
+                <div class="communications-grid">
+                    <div class="communications-status">
+                        <span>PRESS OFFICE</span>
+                        <strong>OPERATIONAL</strong>
+                    </div>
+
+                    <div class="communications-status">
+                        <span>PUBLIC CONFIDENCE</span>
+                        <strong>SELF-REPORTED HIGH</strong>
+                    </div>
+
+                    <div class="communications-status">
+                        <span>SECRETARY OF STATE INQUIRIES</span>
+                        <strong>REFERRED BACK</strong>
+                    </div>
+
+                    <div class="communications-status">
+                        <span>DIRECTOR HEFTY INVESTIGATIONS</span>
+                        <strong>ALL CLEARED</strong>
+                    </div>
+                </div>
+
+                <p class="communications-disclaimer">
+                    All indicators are fictional and provided
+                    for administrative entertainment.
+                </p>
+            </section>
+
+            <!-- PRESS BRIEFING -->
+            <article class="motto-item">
+                <h3>Office of the Press Secretary</h3>
+
+                <p>
+                    The Office of the Press Secretary is
+                    responsible for issuing statements
+                    concerning developments of national
+                    significance and matters requiring
+                    official clarification.
+                </p>
+
+                <p>
+                    The Department conducts regular briefings,
+                    subject to availability, executive approval,
+                    and whether the Director feels that the
+                    questions being asked warrant a response.
+                </p>
+
+                <button id="briefingButton" type="button">
+                    GENERATE OFFICIAL PRESS BRIEFING
+                </button>
+
+                <div id="briefingOutput"
+                     class="communications-output"
+                     role="status"
+                     aria-live="polite"
+                     hidden>
+                </div>
+            </article>
+
+            <!-- PUBLIC REQUEST -->
+            <article class="motto-item">
+                <h3>Public Information Requests</h3>
+
+                <p>
+                    Citizens and members of the public may
+                    submit inquiries regarding government
+                    operations, executive policy, and
+                    departmental administration.
+                </p>
+
+                <p>
+                    The Department reserves the right to
+                    respond, defer, decline, redirect, or
+                    acknowledge receipt without taking
+                    any further action.
+                </p>
+
+                <label for="inquiryTopic" class="inquiry-label">
+                    Select the subject of your inquiry:
+                </label>
+
+                <select id="inquiryTopic" class="inquiry-select">
+                    <option value="general">General Government Affairs</option>
+                    <option value="secretary">Secretary of State</option>
+                    <option value="hefty">Director Hefty</option>
+                    <option value="google">Google Is Inyalowda</option>
+                    <option value="classified">Classified Information</option>
+                </select>
+
+                <button id="inquiryButton" type="button">
+                    SUBMIT OFFICIAL INQUIRY
+                </button>
+
+                <div id="inquiryOutput"
+                     class="communications-output"
+                     role="status"
+                     aria-live="polite"
+                     hidden>
+                </div>
+
+                <p class="communications-disclaimer">
+                    Demonstration only. No information is
+                    transmitted or stored.
+                </p>
+            </article>
+
+            <!-- PRESS RELEASE ARCHIVE -->
+            <article class="motto-item">
+                <h3>Official Press Releases</h3>
+
+                <p>
+                    The Department maintains a public record
+                    of selected government communications.
+                </p>
+
+                <div class="press-release">
+                    <span>HA-COM-001 • PUBLIC RELEASE</span>
+                    <h4>Establishment of the Digital Government Portal</h4>
+                    <p>
+                        The Office of the President announces
+                        the successful establishment of the
+                        Hilton Accords online government presence.
+                    </p>
+                </div>
+
+                <div class="press-release">
+                    <span>HA-COM-002 • PUBLIC RELEASE</span>
+                    <h4>Statement Regarding the Secretary of State</h4>
+                    <p>
+                        The Department confirms that the Office
+                        of the Secretary of State continues
+                        to exist. Further details remain
+                        unavailable.
+                    </p>
+                </div>
+
+                <div class="press-release">
+                    <span>HA-COM-003 • PUBLIC RELEASE</span>
+                    <h4>Departmental Oversight Review</h4>
+                    <p>
+                        Following independent investigation,
+                        Director Hefty has determined
+                        that Director Hefty remains
+                        in full compliance with all
+                        applicable internal regulations.
+                    </p>
+                </div>
+            </article>
+
+            <!-- DIRECTOR'S STATEMENT -->
+            <article class="motto-item">
+                <h3>A Message from Director Jay</h3>
+
+                <p>
+                    The citizens of the Hilton Accords
+                    deserve clear, responsible, and
+                    timely communication from their government.
+                </p>
+
+                <p>
+                    As Director of Communications, I remain
+                    committed to maintaining a constructive
+                    relationship between the administration
+                    and the public it serves.
+                </p>
+
+                <p>
+                    I further recognize that public trust
+                    is strengthened through accountability,
+                    consistency, and a willingness to address
+                    legitimate concerns.
+                </p>
+
+                <p>
+                    Unfortunately, not every concern
+                    submitted to this office is legitimate.
+                </p>
+
+                <p>
+                    Certain questions have already been
+                    answered repeatedly. Others are properly
+                    directed to agencies that have expressly
+                    declined to respond.
+                </p>
+
+                <p>
+                    Nevertheless, this Department shall
+                    continue its proud tradition of
+                    issuing official statements with
+                    extraordinary confidence, regardless
+                    of whether anyone requested them.
+                </p>
+
+                <p class="official-statement">
+                    "We communicate with purpose,
+                    speak with authority, and reserve
+                    the right to issue corrections
+                    without acknowledging error."
+                </p>
+
+                <p><strong>Director Jay</strong></p>
+                <p>Department of Communications</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>ISAIAH 6:8 • 2 TIMOTHY 1:7</p>
+        <p>
+            PEACE THROUGH STRENGTH • READY IN RESERVE •
+            GOOGLE IS INYALOWDA • BELTALOWDA GONYA RISE
+        </p>
+    </footer>
+</body>
+</html>
